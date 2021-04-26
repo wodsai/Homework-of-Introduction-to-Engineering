@@ -1,0 +1,56 @@
+int red_light_2=0;
+int yellow_light_2=1;
+int green_light_2=2;
+int red_light_3=4;
+int yellow_light_3=5;
+int green_light_3=6;
+int red_light_1=7;
+int yellow_light_1=8;
+int green_light_1=9;
+int red_4=10;
+int yellow_4=11;
+int green_4=12;
+void setup_operation() {
+ pinMode(red_light_1,OUTPUT);
+ pinMode(yellow_light_1,OUTPUT);
+ pinMode(green_light_1,OUTPUT);
+ pinMode(red_light_2,OUTPUT);
+ pinMode(yellow_light_2,OUTPUT);
+ pinMode(green_light_2,OUTPUT);
+ pinMode(red_light_3,OUTPUT);
+ pinMode(yellow_light_3,OUTPUT);
+ pinMode(green_light_3,OUTPUT);
+ pinMode(red_light_4,OUTPUT);
+ pinMode(yellow_light_4,OUTPUT);
+ pinMode(green_light_4,OUTPUT);
+}
+
+void loop_operation() {
+digitalWrite(yellow_light_2,LOW);
+digitalWrite(yellow_light_3,LOW);
+digitalWrite(green_light_3,HIGH);
+digitalWrite(red_light_2,HIGH);
+delay(1000);
+digitalWrite(green_light_1,LOW);
+digitalWrite(red_light_2,LOW);
+digitalWrite(yellow_light_1,HIGH);
+digitalWrite(yellow_light_2,HIGH);
+delay(3000);
+digitalWrite(yellow_light_1,LOW);
+digitalWrite(yellow_light_2,LOW);
+digitalWrite(green_light_2,HIGH);
+digitalWrite(red_light_1,HIGH);
+delay(3000);
+digitalWrite(green_light_1,HIGH);
+digitalWrite(red_light_2,HIGH);
+digitalWrite(red_light_3,HIGH);
+digitalWrite(red_light_4,HIGH);
+delay(5000);
+digitalWrite(green_light_2,LOW);
+digitalWrite(yellow_light_2,HIGH);
+digitalWrite(yellow_light_3,HIGH);
+digitalWrite(red_light_3,LOW);
+delay(5000);
+digitalWrite(green_light_3,LOW);
+digitalWrite(red_light_1,LOW);
+}
