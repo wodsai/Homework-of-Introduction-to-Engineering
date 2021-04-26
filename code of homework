@@ -1,3 +1,5 @@
+#include<reg.52>
+
 int red_light_2=0;
 int yellow_light_2=1;
 int green_light_2=2;
