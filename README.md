@@ -1,0 +1,3 @@
+# Homework-of-Introduction-to-Engineering
+这个代码可以基于51单片机实现红绿灯的控制，利用digitalWrite函数来让红、绿、黄发光二极管通过高电平低电平之间的循环切换实现闪烁，利用pinMode函数实现数字引脚的输出，
+转化到高电平以实现持续红绿灯常亮和黄灯闪烁。delay函数来实现延时并实现闪烁。
